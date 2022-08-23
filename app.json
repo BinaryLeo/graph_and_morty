@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "graphql_and_morty",
+    "slug": "graphql_and_morty",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
