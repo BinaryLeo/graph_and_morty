@@ -1,17 +1,22 @@
 import {
     Text,
     FlatList,
-    SafeAreaView
+    View
   } from 'react-native';
 
-  import { Characters } from '../components/characters';
-  import {useQuery} from '@apollo/client';
+  import { Characters } from '../components/Characters';
+  import { useQuery } from '@apollo/client';
   import { CharacterInfo } from '../queries';
-
-  export function Home(){
+import { Header } from '../components/Header';
+  
+  interface Props {
+    onLayout: () => void;
+  }
+  export function Home({ onLayout }: Props){
     const { loading, error, data } = useQuery(CharacterInfo)
     return(
-        <SafeAreaView>
+      <View style={{backgroundColor: '#000'}} onLayout={onLayout}>
+      <Header/>
       { loading && <Text>Loading ...</Text> }
       { error && <Text>Error ...</Text> }
       { data && 
@@ -20,6 +25,6 @@ import {
           renderItem={ ({item}) => <Characters card={item}/>}
         />
       }
-    </SafeAreaView>
+    </View>
     )
   }
