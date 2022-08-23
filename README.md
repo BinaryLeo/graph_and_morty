@@ -4,7 +4,11 @@
 <p> Graph and Morty</p>
 <p>A variant of my last project Rick and Native to handle an API. Now using GraphQL and Apollo Client</p>
 <p>Built during the Devs for Tech - React Native program, for study purposes only.
-  
+ 
+<p>See also the same application using an API Rest
+<a href="https://github.com/BinaryLeo/rick_and_native">HERE</a>
+</p>  
+ 
   [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https:/github.com/BinaryLeo//graphql_and_morty/blob/main/LICENSE)
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/BinaryLeo/graphql_and_morty?color=blue">
   ![GitHub last commit](https://img.shields.io/github/last-commit/BinaryLeo/graphql_and_morty?style=flat-square)
