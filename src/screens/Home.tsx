@@ -4,10 +4,11 @@ import {
     View
   } from 'react-native';
 
-  import { Characters } from '../components/Characters';
+
   import { useQuery } from '@apollo/client';
   import { CharacterInfo } from '../queries';
 import { Header } from '../components/Header';
+import {Character} from '../components/Characters'
   
   interface Props {
     onLayout: () => void;
@@ -22,7 +23,7 @@ import { Header } from '../components/Header';
       { data && 
         <FlatList
           data={data.characters.results}
-          renderItem={ ({item}) => <Characters card={item}/>}
+          renderItem={ ({item}) => <Character card={item}/>}
         />
       }
     </View>

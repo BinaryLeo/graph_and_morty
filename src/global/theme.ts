@@ -1,7 +1,8 @@
 export default{
     colors:{
         primary: '#000',
-        cards:'#00b6cd',
+        secondary: '#fff',
+        cards:'#E435AB',
         border:'#A2E400'
     },
     fonts:{

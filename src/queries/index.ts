@@ -7,6 +7,7 @@ query {
         name
         gender
         image
+        species
       }
     }
   }
