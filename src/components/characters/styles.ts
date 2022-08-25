@@ -11,7 +11,7 @@ export const Wrapper = styled.TouchableOpacity`
   width: 90%;
   border-radius: 50px;
   margin: 10px;
-  height: ${RFValue(150)}px;
+  height: ${RFValue(120)}px;
   background-color: ${({ theme }) => theme.colors.cards};
   flex-direction: row;
   align-items: center;
