@@ -7,24 +7,25 @@ export const Container = styled.View`
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.primary};
 `;
-export const Wrapper = styled.TouchableOpacity`
+export const Wrapper = styled.View`
   width: 90%;
-  border-radius: 50px;
+  border-radius: 70px;
   margin: 10px;
-  height: ${RFValue(120)}px;
+  height: 140px;
   background-color: ${({ theme }) => theme.colors.cards};
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 `;
 export const ImageContainer = styled.View`
   flex: 1;
 `;
 export const Content = styled.View`
-  flex: 1;
+  margin-left:20px;
+  flex: 2;
 `;
 export const LabelContent = styled.Text`
-  font-size: ${RFValue(16)}px;
+  font-size: 14px;
   font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.secondary};
 `;

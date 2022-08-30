@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { ThemeProvider } from "styled-components";
-import theme from "./src/global/theme";
-import { Home } from "./src/screens/Home";
+
 import { ApolloProvider } from "@apollo/client";
 import { client } from "./src/services";
+import { Provider } from "react-redux";
+import {store} from "./src/store"
+import { Home } from "./src/screens/Home";
 
 import * as SplashScreen from "expo-splash-screen";
+import { ThemeProvider } from "styled-components";
+import theme from "./src/global/theme";
 import * as Font from "expo-font";
 import {
   Poppins_400Regular,
@@ -41,10 +44,12 @@ export default function App() {
     return null;
   }
   return (
+    <Provider store={store}>
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
         <Home onLayout={onLayout} />
       </ThemeProvider>
     </ApolloProvider>
+    </Provider>
   );
 }
