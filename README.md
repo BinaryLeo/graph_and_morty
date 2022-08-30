@@ -30,9 +30,11 @@
 ## ✅ Technologies
 - ``Expo bare workflow``
 - ``React Native``
+- ``Redux Toolkit``
 - ``Typescript``
 - ``Vector Icons``  
 - ``GraphQL``
 - ``Apollo Client``  
 - ``responsive font-size`` 
 - ``Styled Components``
+- ``Vector Icons``
