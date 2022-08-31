@@ -8,9 +8,9 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.primary};
 `;
 export const Wrapper = styled.View`
-  width: 90%;
-  border-radius: 70px;
-  margin: 10px;
+  width: 95%;
+  border-radius: 30px;
+  margin: 5px;
   height: 140px;
   background-color: ${({ theme }) => theme.colors.cards};
   flex-direction: row;
@@ -21,7 +21,7 @@ export const ImageContainer = styled.View`
   flex: 1;
 `;
 export const Content = styled.View`
-  margin-left:20px;
+  margin-left:30px;
   flex: 2;
 `;
 export const LabelContent = styled.Text`
@@ -29,3 +29,12 @@ export const LabelContent = styled.Text`
   font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.secondary};
 `;
+export const ModalLabel = styled.Text`
+  font-size: ${RFValue(14)}px;
+  font-family: ${({ theme }) => theme.fonts.regular};
+  color: ${({ theme }) => theme.colors.secondary};
+`;
+export const CloseBtn = styled.View`
+  width: 100%;
+  align-items: flex-end;
+  margin-right: 0px;`
