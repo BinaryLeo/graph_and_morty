@@ -25,9 +25,13 @@
 
 
 
-https://user-images.githubusercontent.com/72607039/187827943-51ed8fb6-859e-4851-9d2d-462577dad63b.mp4
 
-![Captura de tela 2022-09-01 034852](https://user-images.githubusercontent.com/72607039/187827947-30365cc1-892d-45b7-8852-4a9c1486dbbd.png)
+https://user-images.githubusercontent.com/72607039/188019933-e13b9ab7-115e-41b5-9d7e-df9a8528577d.mp4
+
+
+
+![Captura de tela 2022-09-01 215518](https://user-images.githubusercontent.com/72607039/188019940-fd8e8dd5-9a47-49e4-a07f-a429c3455dfe.png)
+
 
 
 
