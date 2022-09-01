@@ -55,7 +55,7 @@ export function Characters({ card }: CharacterProps) {
             source={{ uri: card.image }}
             style={{
               marginLeft: 15,
-              height: 105,
+              height: 110,
               width: 105,
               borderRadius: 20,
             }}
@@ -74,7 +74,10 @@ export function Characters({ card }: CharacterProps) {
               alignItems: "center",
             }}
           >
-            <TouchableOpacity onPress={handleFavorite}>
+            <TouchableOpacity
+              style={{ marginRight: 5 }}
+              onPress={handleFavorite}
+            >
               <Text style={{ color: "white" }}>
                 <Feather name="heart" color="white" size={24} />
                 Add to favorite
@@ -83,7 +86,7 @@ export function Characters({ card }: CharacterProps) {
             <TouchableOpacity onPress={() => setModalIsOpen(true)}>
               <Text style={{ color: "white" }}>
                 <Feather name="eye" color="white" size={24} />
-                Details
+                {` Details`}
               </Text>
             </TouchableOpacity>
             <Modal
@@ -98,7 +101,7 @@ export function Characters({ card }: CharacterProps) {
                     <Feather
                       name="x-square"
                       size={36}
-                      color="black"
+                      color="white"
                       onPress={() => setModalIsOpen(false)}
                     />
                   </CloseBtn>
@@ -112,10 +115,7 @@ export function Characters({ card }: CharacterProps) {
                     }}
                     source={{ uri: `${card.image}` }}
                   />
-                  <ModalLabel>
-                    <Feather name="heart" size={24} />
-                    is favorite?
-                  </ModalLabel>
+
                   <ModalLabel>{` Name: ${card.name}`}</ModalLabel>
                   <ModalLabel>{` Gender: ${card.gender}`}</ModalLabel>
                   <ModalLabel>{` Specie: ${card.species}`}</ModalLabel>
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     width: "60%",
-    height: "60%",
+    height: "45%",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#E435AB",

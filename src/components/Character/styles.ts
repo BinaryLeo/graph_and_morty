@@ -21,7 +21,7 @@ export const ImageContainer = styled.View`
   flex: 1;
 `;
 export const Content = styled.View`
-  margin-left:30px;
+  margin-left: 30px;
   flex: 2;
 `;
 export const LabelContent = styled.Text`
@@ -37,4 +37,5 @@ export const ModalLabel = styled.Text`
 export const CloseBtn = styled.View`
   width: 100%;
   align-items: flex-end;
-  margin-right: 0px;`
+  margin-right: 0px;
+`;
