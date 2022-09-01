@@ -4,7 +4,9 @@
 <p> Graph and Morty</p>
 <p>A variant of my last project Rick and Native to handle an API. Now using GraphQL and Apollo Client</p>
 <p>Built during the Devs for Tech - React Native program, for study purposes only.
- 
+
+
+
 <p>See also the same application using an API Rest
 <a href="https://github.com/BinaryLeo/rick_and_native">HERE</a>
 </p>  
@@ -15,7 +17,7 @@
   ![GitHub top language](https://img.shields.io/github/languages/top/BinaryLeo/graphql_and_morty?style=flat-square)
   
 
-
+[![My Skills](https://skillicons.dev/icons?i=react,ts,graphql,vscode,styledcomponents,redux,&perline=6)](https://github.com/BinaryLeo)
  
 
 ![graph](https://user-images.githubusercontent.com/72607039/186157871-d9bcd6f9-6b66-4fdc-b0da-d09cb5b73b1e.png)
@@ -32,7 +34,7 @@ https://user-images.githubusercontent.com/72607039/187827943-51ed8fb6-859e-4851-
   
 </div>
 
-## ✅ Technologies
+## ✅ Technologies and Dependencies
 - ``Expo bare workflow``
 - ``React Native``
 - ``Redux Toolkit``
@@ -43,3 +45,4 @@ https://user-images.githubusercontent.com/72607039/187827943-51ed8fb6-859e-4851-
 - ``responsive font-size`` 
 - ``Styled Components``
 - ``Vector Icons``
+
