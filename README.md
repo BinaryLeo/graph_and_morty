@@ -20,7 +20,8 @@
 [![My Skills](https://skillicons.dev/icons?i=react,ts,graphql,vscode,styledcomponents,redux,&perline=6)](https://github.com/BinaryLeo)
  
 
-![graph](https://user-images.githubusercontent.com/72607039/186157871-d9bcd6f9-6b66-4fdc-b0da-d09cb5b73b1e.png)
+
+![banner](https://user-images.githubusercontent.com/72607039/187924083-1c67ed4e-35f0-4a1c-b256-260625e0a0a2.png)
 
 
 
