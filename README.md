@@ -21,7 +21,12 @@
 ![graph](https://user-images.githubusercontent.com/72607039/186157871-d9bcd6f9-6b66-4fdc-b0da-d09cb5b73b1e.png)
 
 
-![Animação](https://user-images.githubusercontent.com/72607039/186538164-58934568-9ba5-4979-aeac-eb7fb5f46c85.gif)
+
+https://user-images.githubusercontent.com/72607039/187827943-51ed8fb6-859e-4851-9d2d-462577dad63b.mp4
+
+![Captura de tela 2022-09-01 034852](https://user-images.githubusercontent.com/72607039/187827947-30365cc1-892d-45b7-8852-4a9c1486dbbd.png)
+
+
 
 
   
