@@ -46,6 +46,7 @@ export function FavoriteCharModal({ isModalOpen, setIsModalOpen }: Props) {
       <View style={styles.modalBackground}>
         {favorites.length > 0 ? (
           <View style={styles.modalContainer}>
+            <View style={{flex: 4}}>
             <ScrollView showsVerticalScrollIndicator={false}>
               {favorites.map((character, index) => (
                 <Container key={index}>
@@ -78,10 +79,15 @@ export function FavoriteCharModal({ isModalOpen, setIsModalOpen }: Props) {
                   </CharBox>
                 </Container>
               ))}
-              <CloseButton onPress={() => setIsModalOpen(false)}>
+              
+            </ScrollView>
+            </View>
+            <View style={{flex: 1, marginTop: 20, width: '100%'}}>
+            <CloseButton onPress={() => setIsModalOpen(false)}>
                 <Text>Close</Text>
               </CloseButton>
-            </ScrollView>
+            
+           </View>
           </View>
         ) : (
           <View>
@@ -110,9 +116,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   modalContainer: {
+    flexDirection:"column",
     width: "65%",
     height: "50%",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
     backgroundColor: "#E435AB",
     paddingHorizontal: 20,
