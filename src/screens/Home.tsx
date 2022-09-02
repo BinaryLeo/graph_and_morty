@@ -1,4 +1,4 @@
-import { Text, FlatList, View, TouchableOpacity } from "react-native";
+import { Text, FlatList} from "react-native";
 import { useSelector } from "react-redux";
 import { favoriteStateData } from "../store/modules/Favorite/reducer";
 
@@ -7,9 +7,10 @@ import { CharacterInfo } from "../queries";
 
 import { Header } from "../components/Header";
 import { Characters } from "../components/Character";
-import { FavoriteCharModal } from "../components/Favorites";
 import { AntDesign } from "@expo/vector-icons";
 import { useState } from "react";
+import { Container, FavoriteLoader } from "./style";
+import { FavoriteCharModal } from "../components/Favorites";
 
 interface Props {
   onLayout: () => void;
@@ -19,31 +20,14 @@ export function Home({ onLayout }: Props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const favorites = useSelector(favoriteStateData);
   return (
-    <View
-      style={{
-        height: "100%",
-        paddingVertical: 10,
-        paddingHorizontal: 15,
-        backgroundColor: "#000",
-      }}
-      onLayout={onLayout}
-    >
+    <Container onLayout={onLayout}>
       <Header />
-      <TouchableOpacity
-        style={{
-          marginBottom: 20,
-          width: "95%",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          flexDirection: "row",
-        }}
-        onPress={() => setIsModalOpen(true)}
-      >
+      <FavoriteLoader onPress={() => setIsModalOpen(true)}>
         <AntDesign name="heart" size={24} color="#E435AB" />
         <Text style={{ color: "white", marginLeft: 5 }}>{`${
           favorites?.length ?? 0
         }`}</Text>
-      </TouchableOpacity>
+      </FavoriteLoader>
 
       {loading && <Text>Loading ...</Text>}
       {error && <Text>Error ...</Text>}
@@ -60,6 +44,6 @@ export function Home({ onLayout }: Props) {
           setIsModalOpen={setIsModalOpen}
         />
       )}
-    </View>
+    </Container>
   );
 }

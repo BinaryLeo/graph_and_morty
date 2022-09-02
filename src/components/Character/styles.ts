@@ -24,6 +24,13 @@ export const Content = styled.View`
   margin-left: 30px;
   flex: 2;
 `;
+export const FavoriteBox = styled.View`
+  width: 85%;
+  margin-top: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
 export const LabelContent = styled.Text`
   font-size: 14px;
   font-family: ${({ theme }) => theme.fonts.regular};

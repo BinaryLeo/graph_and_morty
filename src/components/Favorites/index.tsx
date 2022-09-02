@@ -3,7 +3,6 @@ import {
   TouchableOpacity,
   View,
   Text,
-  Button,
   StyleSheet,
   Image,
   ScrollView,
@@ -15,7 +14,14 @@ import {
   favoriteStateData,
   removeFavoriteCharacter,
 } from "../../store/modules/Favorite/reducer";
-import { Container, CharBox, BottomBox, CloseButton } from "./styles";
+import {
+  Container,
+  CharBox,
+  BottomBox,
+  CloseButton,
+  RemoveBox,
+  LeaveBox,
+} from "./styles";
 
 export interface Props {
   isModalOpen: boolean;
@@ -60,20 +66,13 @@ export function FavoriteCharModal({ isModalOpen, setIsModalOpen }: Props) {
                       <TouchableOpacity
                         onPress={() => handleRemoveCharacter(character.id)}
                       >
-                        <View
-                          style={{
-                            flexDirection: "row",
-                            padding: 5,
-                            alignItems: "center",
-                            justifyContent: "center",
-                          }}
-                        >
+                        <RemoveBox>
                           <Entypo name="remove-user" size={20} color="#fff" />
                           <Text style={{ color: "white", marginLeft: 5 }}>
                             {" "}
                             Remove
                           </Text>
-                        </View>
+                        </RemoveBox>
                       </TouchableOpacity>
                     </BottomBox>
                   </CharBox>
@@ -86,16 +85,8 @@ export function FavoriteCharModal({ isModalOpen, setIsModalOpen }: Props) {
           </View>
         ) : (
           <View>
-            <View
-              style={{
-                backgroundColor: "#54550",
-                width: "60%",
-                height: 50,
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Text style={{ color: "white", fontSize: 16, padding: 10 }}>
+            <LeaveBox>
+              <Text style={{ color: "white", fontSize: 16, marginBottom: 10 }}>
                 Nothing to see.
               </Text>
               <CloseButton onPress={() => setIsModalOpen(false)}>
@@ -103,7 +94,7 @@ export function FavoriteCharModal({ isModalOpen, setIsModalOpen }: Props) {
                   Close Window
                 </Text>
               </CloseButton>
-            </View>
+            </LeaveBox>
           </View>
         )}
       </View>
@@ -120,7 +111,7 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     width: "65%",
-    height: "55%",
+    height: "50%",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#E435AB",

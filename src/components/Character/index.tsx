@@ -20,6 +20,7 @@ import {
   LabelContent,
   ModalLabel,
   CloseBtn,
+  FavoriteBox,
 } from "./styles";
 import { Feather } from "@expo/vector-icons";
 export interface CharacterProps {
@@ -65,15 +66,7 @@ export function Characters({ card }: CharacterProps) {
           <LabelContent>{` Name: ${card.name}`}</LabelContent>
           <LabelContent>{` Gender: ${card.gender}`}</LabelContent>
           <LabelContent>{` Specie: ${card.species}`}</LabelContent>
-          <View
-            style={{
-              width: "85%",
-              marginTop: 5,
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
+          <FavoriteBox>
             <TouchableOpacity
               style={{ marginRight: 5 }}
               onPress={handleFavorite}
@@ -122,7 +115,7 @@ export function Characters({ card }: CharacterProps) {
                 </View>
               </View>
             </Modal>
-          </View>
+          </FavoriteBox>
         </Content>
       </Wrapper>
     </Container>
